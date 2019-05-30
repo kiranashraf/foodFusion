@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_onboarding"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/ll1"
+    android:background="@drawable/bg_pattern">
+
+
+<RelativeLayout
+    android:id="@+id/rl1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.8"
+    >
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="4dp"-->
+        <!--android:alpha=".5"-->
+        <!--android:layout_above="@id/layoutDots"-->
+        <!--android:background="@android:color/white" />-->
+
+
+
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/layoutDots"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/RoundButtonStyle"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" android:text="Sign In"
+            android:onClick="SignIn">
+        </Button>
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/RoundButtonStyle"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Sign Up"
+            android:onClick="SignUp">
+        </Button>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.1"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:layout_marginRight="2dp"
+
+        style="@style/EditTextLabelStyle"
+        android:textSize="14dp"
+        android:text="Not ready to Sign up? "/>
+    <TextView
+        android:id="@+id/tv_clickDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="2dp"
+
+        android:textSize="18dp"
+        android:text="Explore the app."
+        android:gravity="left"
+        style="@style/TextViewHeadingMainScreenStyle"
+        />
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll1"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/bg_pattern">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:src="@drawable/back_arrow"
+            android:layout_centerVertical="true"
+            android:onClick="BackButton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            style="@style/TextViewBlackHeadingStyleMid"
+            android:text="Sign Up"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ff_logo_small"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/heading_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Sign up to get started"
+            style="@style/TextViewBlackHeadingStyleMid"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/FrameLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:visibility="gone"/>
+                <RelativeLayout
+                    android:id="@+id/rl_fb"
+                android:layout_width="match_parent"
+                android:background="@drawable/round_outline"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sign_up_with2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up with"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:onClick="FacebookSignUp"/>
+
+                <ImageView
+                    android:layout_toRightOf="@id/sign_up_with2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/fb_icon"
+                    android:onClick="FacebookSignUp"/>
+
+
+            </RelativeLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/FrameLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="TwitterSignUp">
+
+            <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                android:id="@+id/login_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:visibility="gone"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/round_outline"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sign_up_with1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up with"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+
+                <ImageView
+                    android:layout_toRightOf="@id/sign_up_with1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/twitter_icon"/>
+
+            </RelativeLayout>
+            </FrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Or"
+                android:layout_margin="20px"
+                android:gravity="center"
+                android:layout_gravity="center"
+                style="@style/TextViewGrayStyle"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up With Email"
+                android:gravity="center"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                style="@style/RoundButtonStyle"
+                android:onClick="BtnLoginClick"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/network"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/noConnection"
+                android:textSize="14dp"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

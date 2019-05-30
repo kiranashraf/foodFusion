@@ -1,0 +1,157 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        applicationId "com.foodfusion.foodfusion"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 7
+        versionName "1.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        manifestPlaceholders = [onesignal_app_id               : "9ba62b2a-edac-4391-aa25-f904e1f91767",
+                                onesignal_google_project_number: "REMOTE"]
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            testCoverageEnabled = true
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api('com.android.support:appcompat-v7:26.0.0-beta1') {
+        exclude group: 'com.google.code.gson'
+    }
+    api('com.android.support:support-v4:26.0.0') {
+        exclude group: 'com.google.code.gson'
+    }
+    api('com.android.support:design:26.0.0') {
+        exclude group: 'com.google.code.gson'
+    }
+    api('com.android.support.constraint:constraint-layout:1.0.2') {
+        exclude group: 'com.google.code.gson'
+    }
+
+    //implementation 'com.google.firebase:firebase-crash:12.0.1'
+    testImplementation('junit:junit:4.12') {
+        exclude group: 'com.google.code.gson'
+    }
+    androidTestImplementation('com.android.support.test:runner:0.5') {
+        exclude group: 'com.google.code.gson'
+    }
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2') {
+        exclude group: 'com.google.code.gson'
+    }
+    // api 'com.google.android.gms:play-services-gcm:11.4.4'
+    api('org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2') {
+        exclude group: 'com.google.code.gson'
+    }
+//    api 'com.squareup.retrofit:retrofit:1.9.0'
+    api('com.squareup.okhttp:okhttp:2.7.2') {
+        exclude group: 'com.google.code.gson'
+    }
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.7.2' //updated this
+    api('com.squareup.retrofit2:retrofit:2.3.0') {
+        exclude group: 'com.google.code.gson'
+    }
+//    compile('cn.pedant.sweetalert:library:1.3'){
+//        exclude group:'com.google.code.gson'
+//    }
+//    compile 'com.squareup.retrofit2:converter-gson:2.3.0':{
+//        exclude 'com.google.code.gson'
+//    }
+    api 'com.google.code.gson:gson:2.8.0'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    //noinspection GradleCompatible
+    api('com.android.support:recyclerview-v7:26.1.0')
+    //noinspection GradleCompatible
+    api 'com.android.support:cardview-v7:26.1.0'
+
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    api 'com.squareup.picasso:picasso:2.5.2'
+
+    api 'com.felipecsl.asymmetricgridview:library:2.0.1'
+    api 'com.facebook.android:facebook-login:[4,5)'
+//    implementation 'com.twitter.sdk.android.core'
+    api('com.twitter.sdk.android:twitter-core:3.1.1@aar') { transitive = true }
+    api 'com.miguelcatalan:materialsearchview:1.4.0'
+
+    api 'com.ss.bannerslider:bannerslider:1.8.0'
+    compile 'com.onesignal:OneSignal:[3.7.1, 3.99.99]'
+    // compile('com.twitter.sdk.android:twitter-core:3.1.1@aar') {
+//        transitive = true;
+//        exclude module: 'gson'
+//        exclude module: 'converter-gson'
+//        exclude module: 'retrofit'
+//        exclude module: 'okhttp'
+//    }
+//
+
+//    compile 'com.google.apis:google-api-services-youtube:v3-rev181-1.22.0'
+    compile('com.google.api-client:google-api-client-android:1.23.0') {
+        exclude group: 'org.apache.httpcomponents'
+        exclude group: 'com.google.code.findbugs'
+    }
+    compile('com.google.apis:google-api-services-youtube:v3-rev193-1.23.0') {
+        exclude group: 'com.google.code.findbugs'
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    }
+    compile(group: 'com.google.oauth-client', name: 'google-oauth-client-jetty', version: '1.22.0') {
+        exclude group: 'com.google.code.findbugs'
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    }
+//    compile 'com.google.android.gms:play-services-auth:11.8.0'
+    compile 'pub.devrel:easypermissions:0.3.0'
+    compile 'com.labo.kaji:relativepopupwindow:0.3.1'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.google.android:flexbox:0.3.2'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.wang.avi:library:1.0.3'
+    compile 'com.nineoldandroids:library:2.4.0'
+
+
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+    compile 'com.android.volley:volley:1.1.0'
+//    compile('com.squareup.retrofit2:converter-gson:2.3.0') {
+//        exclude group:'com.google.code.gson'
+//    }
+
+//    compile (project(':Android-UndoBar')) {
+//        exclude group: 'com.nineoldandroids', module: 'library' // without or without this one
+//    }
+    // compile 'com.github.f0ris.sweetalert:library:1.5.1'
+
+    compile project(path: ':sweetAlertBox')
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.0.0'
+            }
+        }
+    }
+}
+//configurations.all {
+//    resolutionStrategy {
+//        force 'com.android.support:multidex:1.0.2'
+//    }
+//}
+
+apply plugin: 'com.google.gms.google-services'

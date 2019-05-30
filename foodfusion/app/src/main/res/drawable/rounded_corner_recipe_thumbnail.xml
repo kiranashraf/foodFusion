@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <!--android:left="8dp"-->
+        <!--android:right="8dp"-->
+        <!--android:top="8dp"-->
+        <!--android:bottom="8dp"-->
+        <shape android:shape="rectangle">
+            <solid
+                android:color="@color/white"
+                >
+            </solid>
+            <stroke
+                android:width="10dp"
+                android:color="@color/white"></stroke>
+<padding
+    android:top="0dp"
+    android:bottom="0dp"
+    android:right="0dp"
+    android:left="0dp"></padding>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+    <!--<item-->
+        <!--android:left="1dp"-->
+        <!--android:right="1dp"-->
+        <!--android:top="1dp"-->
+        <!--android:bottom="1dp">-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<solid android:color="@android:color/white"/>-->
+            <!--<corners android:radius="6dp" />-->
+
+        <!--</shape>-->
+    <!--</item>-->
+</layer-list>
+<!--<shape-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:shape="rectangle"   >-->
+
+    <!--<solid-->
+        <!--android:color="@color/white"-->
+        <!--&gt;-->
+    <!--</solid>-->
+    <!---->
+    <!--<stroke-->
+        <!--android:width="10dp"-->
+        <!--android:color="@color/blue_btn_bg_color"></stroke>-->
+    <!--&lt;!&ndash;<stroke&ndash;&gt;-->
+        <!--&lt;!&ndash;android:width="2dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:color="@color/owsewhite" >&ndash;&gt;-->
+    <!--&lt;!&ndash;</stroke>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<padding&ndash;&gt;-->
+        <!--&lt;!&ndash;android:left="2dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:top="2dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:right="2dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:bottom="2dp"    >&ndash;&gt;-->
+    <!--&lt;!&ndash;</padding>&ndash;&gt;-->
+
+
+    <!--<corners-->
+        <!--android:radius="5dp">-->
+        <!--&lt;!&ndash;android:bottomLeftRadius="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:bottomRightRadius="5dp">&ndash;&gt;-->
+
+    <!--</corners>-->
+
+<!--</shape>-->

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "918253722589",
+    "firebase_url": "https://foodfusion-76cec.firebaseio.com",
+    "project_id": "foodfusion-76cec",
+    "storage_bucket": "foodfusion-76cec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918253722589:android:40a7ec55ef1418b5",
+        "android_client_info": {
+          "package_name": "com.foodfusion.foodfusion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918253722589-2ustugs0rhp7paaekj5vo4liiag3eo91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.foodfusion.foodfusion",
+            "certificate_hash": "5ddbcffe31d2600cd6f97df9d009f0c5aa315873"
+          }
+        },
+        {
+          "client_id": "918253722589-0ci01rpsms7mdqfc0fc8dr4lrtibd76q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5elZr3bYc1dKLVcnZzZtvpNmTqysWiQw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918253722589-0ci01rpsms7mdqfc0fc8dr4lrtibd76q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

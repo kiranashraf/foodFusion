@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Food Fusion</string>
+    <string name="ServerError">We are facing difficulty in getting connected to Food Fusion server. Please try again later</string>
+    <string name="ConnectionError">Internet connection not available. Please check your connection and try again. </string>
+
+<string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string-array name="app_side_menu">
+        <item>Home</item>
+        <item>Favourite Recipes</item>
+        <item>All Categories</item>
+        <item>Winter</item>
+        <item>LUNCH &amp; DINNER</item>
+        <item>BREAKFAST</item>
+        <item>DISH TYPE</item>
+        <item>SNACKS &amp; T-Time</item>
+        <item>BBQ</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="checkEmailField">Please enter valid email address</string>
+    <string name="defaultError">An Error occured.</string>
+    <string name="alert">Alert</string>
+    <string name="search">Aaj kya pakana hai?</string>
+    <string name="checkEmptyField">Please don\'t leave the fields empty</string>
+    <string name="authenticationFailed"><![CDATA[Authentication failed! Please check Email & Password]]></string>
+    <string name="DEVELOPER_KEY">AIzaSyDFowGqzjvEmi-8JmWeYnpuZEKmN-QA6-w</string>
+    <string name="error_init_failure">Error Loading Video</string>
+    <string name="no_detail_recipe">Sorry! Recipe not loaded</string>
+    <string name="TrendingMore">Trending Recipe(s)</string>
+    <string name="MayLikeMore">You may also like</string>
+    <string name="FavouriteMakeError">OOPs, Couldn\'t mark the favourite.</string>
+    <string name="checkPassword">Confirm Password doesn\'t match</string>
+    <string name="error_subCategory_notFound">No SubCategory Found</string>
+    <string name="MYFOURITES">My favourites</string>
+    <string name="search_title">Search Recipe</string>
+
+
+    <string name="facebook_app_id">243873792756807</string>
+    <string name="fb_login_protocol_scheme">fb243873792756807</string>
+    <string name="FbError">Error logging in with facebook</string>
+
+    <string name="twitter_consumer_key" translatable="false">u9JpydmKQWHzEBEz8CBKtbhoa</string>
+    <string name="twitter_consumer_secret" translatable="false">y4BYJicBuMYmnqYhmiPfwwpSS6FgqLbErzNHU5l1jiKTbMrcCy</string>
+    <string name="TwitterError">Error Connecting to twitter</string>
+    <string name="ResetError">Could not change password:</string>
+    <string name="ForgotPass">Password Reset Failed:</string>
+    <string name="NoRecipe">No Recipes found</string>
+    <string name="noConnection">No Connection (Offline Mode)</string>
+    <string name="reload">Reload</string>
+    <string name="stillNoConnection">No Internet Connection! check your mobile data or wifi</string>
+    <string name="noRecipeDetailTitle">Recipe Detail</string>
+    <string name="retry">Retry</string>
+    <string name="weAreHere">WE ARE HERE TO MAKE</string>
+    <string name="cookingFun">COOKING FUN AGAIN</string>
+</resources>

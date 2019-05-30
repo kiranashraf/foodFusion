@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_btn_bg_color">#27ae60</color>
+    <color name="blue_btn_bg_pressed_color">#2ecc71</color>
+    <color name="material_blue_grey_95">#0066A4</color>
+
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_color2">#e74c3c</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lightergray">#ddd</color>
+
+    <color name="float_transparent">#00000000</color>
+    <color name="white" translatable="false">#FFFFFF</color>
+    <color name="off_white" translatable="false">#f4f2ef</color>
+    <color name="black" translatable="false">#000000</color>
+    <color name="appColor" translatable="false">#F7B032</color>
+    <color name="appColor_light" translatable="false">#3DA0D3</color>
+    <color name="appColor_Dark" translatable="false">#0066A4</color>
+    <color name="appColor_transparant" translatable="false">#8075c585</color>
+    <color name="black_transparent" translatable="false">#80000000</color>
+    <color name="menu_color" translatable="false">#625F5F</color>
+    <color name="menu_color_light_black" translatable="false">#464646</color>
+    <color name="HintColor" translatable="false">#97999c</color>
+    <color name="bottom_menu_color" translatable="false">#f8f8f8</color>
+    <color name="menu_separator_color" translatable="false">#E6E6E6</color>
+    <color name="list_background_pressed">@color/appColor</color>
+    <color name="greenColor">#089644</color>
+    <color name="buttonColor">#a31f34</color>
+    <color name="owsewhite">#f7f7f7</color>
+    <color name="offsite_users_background">#e8e8e8</color>
+    <color name="white_transparent">#a0ffffff</color>
+    <color name="DarkGrayColor">#625F5F</color>
+    <color name="grayColor">#97999c</color>
+    <color name="DeletePink">#ff2d55</color>
+    <color name="greenShade1">#4aa85c</color>
+    <color name="greenShade2">#57b369</color>
+    <color name="greenShade3">#75c585</color>
+
+    <color name="red">#ff0000</color>
+
+    <color name="broadcastHeading">#f9f9f9</color>
+
+</resources>

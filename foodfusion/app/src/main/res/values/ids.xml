@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recipeModelId" type="id">1</item>
+    <item name="likeImageId" type="id">2</item>
+    <item name="categoryData" type="id">4</item>
+    <item name="RecipeId" type="id">11</item>
+</resources>

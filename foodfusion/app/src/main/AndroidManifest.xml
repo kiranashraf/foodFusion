@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.foodfusion.foodfusion"
+xmlns:tools="http://schemas.android.com/tools"
+   >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:name=".Global"
+        android:allowBackup="true"
+tools:replace="icon"
+        android:icon="@mipmap/ic_launcher"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SigninActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ForgetPasswordEmailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ForgetPasswordCodeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ForgetPasswordResetActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LandingActivity" />
+        <activity android:name=".OnboardingActivity" />
+        <activity android:name=".DashboardActivity"></activity>
+        <activity android:name=".FilterActivity" android:noHistory="true" android:theme="@style/myDialog" />
+        <!--//android:theme="@style/myDialog"-->
+        <activity android:name=".ItemDetailActivity"
+            >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.SEND" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<data android:mimeType="image/*" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".TrendingActivity" />
+        <activity android:name=".CategoryRecipeActivity" />
+        <activity android:name=".SubCategoriesActivity" />
+        <activity android:name=".ActivityTest" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".ConnectionlostActivity" />
+        <!--//might get deleted-->
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <meta-data android:name="com.onesignal.NotificationAccentColor.DEFAULT" android:value="@color/appColor" />
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity android:name="com.twitter.sdk.android.core.identity.OAuthActivity" >
+        </activity>
+        <service
+            android:name=".NotificationExtenderFoodFusion"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />
+
+        <receiver
+            android:name=".Custom.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

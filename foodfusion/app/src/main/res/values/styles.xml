@@ -1,0 +1,221 @@
+<resources>
+    - <!--  Base application theme.
+  -->
+<style name="AppTheme" parent="@style/Theme.AppCompat.Light">
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="colorControlNormal">@color/white</item>
+    <item name="colorControlActivated">@color/white</item>
+    <item name="colorControlHighlight">@color/white</item>
+    <item name="android:statusBarColor">@color/appColor_light</item>
+    <item name="colorAccent">@color/menu_color</item>
+    <item name="android:textColorPrimary">@color/black</item>
+    <item name="android:textColorSecondary">@color/black</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:editTextColor">@color/black</item>
+</style>
+<style name="Theme.AppCompat.Light">
+    <item name="android:statusBarColor">@color/appColor_light</item>
+    <item name="android:windowActionBarOverlay">true</item>
+    <item name="android:background">@android:color/transparent</item>
+    <item name="colorAccent">@color/menu_color</item>
+    <item name="android:textColorPrimary">@color/menu_color_light_black</item>
+    <item name="android:textColorSecondary">@color/menu_color_light_black</item>
+    <item name="android:textColor">@color/menu_color_light_black</item>
+    <item name="android:editTextColor">@color/menu_color_light_black</item>
+</style>
+<style name="myDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+    <item name="android:windowBackground">@drawable/shadow</item>
+</style>
+<style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+    <item name="android:textSize">8sp</item>
+</style>
+<style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+    <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+</style>
+<style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    <item name="android:textColor">@color/appColor_light</item>
+</style>
+<style name="TextViewHeadingStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">20dp</item>
+    <item name="android:textColor">@color/white</item>
+</style>
+<style name="TextViewBlackHeadingStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">@dimen/abc_text_size_medium_material</item>
+    <item name="android:textColor">@color/black</item>
+</style>
+<style name="TextViewBlackHeadingStyleMid" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">20dp</item>
+    <item name="android:textColor">@color/menu_color_light_black</item>
+    <item name="android:textStyle">bold</item>
+</style>
+    <style name="TextViewBlackHeadingStyleMidNoBold" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/menu_color_light_black</item>
+    </style>
+<style name="TextViewStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">12dp</item>
+    <item name="android:textColor">@color/white</item>
+</style>
+<style name="TextViewBlackStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">14dp</item>
+    <item name="android:textColor">@color/menu_color_light_black</item>
+</style>
+<style name="TextViewMediumStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">@dimen/abc_text_size_menu_header_material</item>
+    <item name="android:textColor">@color/white</item>
+</style>
+<style name="TextViewMediumGrayStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">@dimen/abc_text_size_menu_material</item>
+    <item name="android:textColor">@color/grayColor</item>
+</style>
+<style name="TextViewGrayStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">15dp</item>
+    <item name="android:textColor">@color/menu_color_light_black</item>
+    <item name="android:textStyle">bold</item>
+</style>
+<style name="TextViewSearchGrayStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">17dp</item>
+    <item name="android:textColor">@color/menu_color_light_black</item>
+    <item name="android:textStyle">bold</item>
+</style>
+<style name="TextViewMainAppColorStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">16dp</item>
+    <item name="android:textColor">@color/appColor</item>
+    <item name="android:textStyle">bold</item>
+</style>
+<style name="TextViewMainGrayStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">14dp</item>
+    <item name="android:textColor">@color/gray_btn_bg_color</item>
+</style>
+
+    <style name="TextViewDetailMainGrayStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/gray_btn_bg_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="StickyFooterTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
+<style name="TextViewMainGraySmallStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">12dp</item>
+    <item name="android:textColor">@color/gray_btn_bg_color</item>
+    <item name="android:textStyle">bold</item>
+</style>
+<style name="RatingBar" parent="Theme.AppCompat">
+    <item name="colorControlNormal">@color/appColor</item>
+    <item name="colorControlActivated">@color/grayColor</item>
+</style>
+<style name="TextViewHeadingMainScreenStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">24dp</item>
+    <item name="android:textColor">@color/appColor</item>
+</style>
+<style name="TextViewHeadingWhiteStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">30dp</item>
+    <item name="android:textColor">@color/white</item>
+</style>
+<style name="TextViewHeadingBlackStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">30dp</item>
+    <item name="android:textColor">@color/DarkGrayColor</item>
+</style>
+<style name="TextViewHeadingNormatBlackStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">20dp</item>
+    <item name="android:textColor">@color/DarkGrayColor</item>
+</style>
+<style name="EditTextInputStyle" parent="@android:style/Widget.EditText">
+    <item name="android:textColorHint">@color/grayColor</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:background">@drawable/edit_text_black_underline</item>
+</style>
+<style name="EditTextInputTransparentStyle" parent="@android:style/Widget.EditText">
+    <item name="android:textColorHint">@color/grayColor</item>
+    <item name="android:backgroundTint">@color/grayColor</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:background">@drawable/edit_text_black_underline</item>
+</style>
+<style name="MainHeading" parent="@android:style/Widget.TextView">
+    <item name="android:textColor">@color/appColor</item>
+    <item name="android:textSize">19dp</item>
+</style>
+<style name="EditTextLabelStyle" parent="@android:style/Widget.TextView">
+    <item name="android:textColor">@color/grayColor</item>
+    <item name="android:textSize">16dp</item>
+</style>
+<style name="EditTextStyle" parent="@android:style/Widget.EditText">
+    <item name="android:textSize">17dp</item>
+    <item name="android:textColor">@color/appColor</item>
+    <item name="colorControlNormal">@color/menu_color</item>
+    <item name="android:textColorHint">@color/appColor</item>
+</style>
+    <style name="FilterTopButtonTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/grayColor</item>
+    </style>
+    <style name="AutoCompleteTextStyle" parent="@android:style/Widget.AutoCompleteTextView">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">@color/appColor</item>
+        <item name="colorControlNormal">@color/menu_color</item>
+        <item name="android:textColorHint">@color/appColor</item>
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+<style name="TextPopup" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">17dp</item>
+    <item name="android:textColor">@color/black</item>
+</style>
+<style name="EditTextStyleWhite" parent="@android:style/Widget.EditText">
+    <item name="android:textSize">@dimen/abc_text_size_medium_material</item>
+    <item name="android:textColor">@color/white</item>
+</style>
+<style name="ButtonStyle" parent="@android:style/Widget.Button">
+    <item name="android:textSize">12dp</item>
+    <item name="android:textColor">@color/white</item>
+</style>
+<style name="ButtonLargeStyle" parent="@android:style/Widget.Button">
+    <item name="android:textSize">16dp</item>
+    <item name="android:textColor">@color/white</item>
+</style>
+<style name="RoundButtonStyle" parent="@android:style/Widget.Button">
+    <item name="android:textSize">18dp</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:background">@drawable/round_button</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:paddingLeft">10dp</item>
+    <item name="android:paddingRight">10dp</item>
+</style>
+    <style name="RoundButtonSmallStyle" parent="@android:style/Widget.Button">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/round_button2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.Custom" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="CustomActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+    <style name="ToggleButtonStyle" >
+        <item name="android:textColor">@color/toggle_color</item>
+    </style>
+    <style name="myToggleButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/toggle_color</item>
+        <item name="android:background">@drawable/checkbox_btn</item>
+    </style>
+    <!--<style name="AppTheme.SearchView" parent="Base.Widget.AppCompat.SearchView">-->
+        <!--<item name="searchIcon">@drawable/search_yellow_icon</item>-->
+        <!--&lt;!&ndash;<item name="closeIcon">@drawable/ic_action_close</item>&ndash;&gt;-->
+    <!--</style>-->
+</resources>

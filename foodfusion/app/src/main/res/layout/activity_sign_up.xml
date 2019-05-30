@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll1"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/bg_pattern">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:src="@drawable/back_arrow"
+            android:layout_centerVertical="true"
+            android:onClick="BackButton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            style="@style/TextViewBlackHeadingStyleMid"
+            android:text="Sign Up"/>
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading_login"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etFname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:padding="10dp"
+                android:maxLength="50"
+                android:singleLine="true"
+                style="@style/EditTextInputStyle"
+                android:layout_marginBottom="20dp"/>
+            <EditText
+                android:id="@+id/etLname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="last Name"
+                android:padding="10dp"
+                android:maxLength="50"
+                android:singleLine="true"
+                style="@style/EditTextInputStyle"
+                android:layout_marginBottom="20dp"/>
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:padding="10dp"
+                android:maxLength="20"
+                android:singleLine="true"
+                style="@style/EditTextInputStyle"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:padding="10dp"
+                android:singleLine="true"
+                style="@style/EditTextInputStyle"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:padding="10dp"
+                android:maxLength="20"
+                android:singleLine="true"
+                style="@style/EditTextInputStyle"
+                android:inputType="textPassword"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:padding="10dp"
+                android:maxLength="20"
+                android:singleLine="true"
+                style="@style/EditTextInputStyle"
+                android:inputType="textPassword"
+                android:layout_marginBottom="20dp"/>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            style="@style/RoundButtonStyle"
+            android:onClick="BtnSignupClick"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/network"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noConnection"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle"> <!-- this shape is used as shadow -->
+            <padding android:bottom="4dp"
+                android:left="4dp"
+                android:right="4dp"
+                android:top="4dp"/>
+            <solid android:color="#11000000"/>
+            <corners android:radius="3dp"/>
+            <!--<gradient-->
+                <!--android:startColor="#334D4D4D"-->
+                <!--android:endColor="#33E6E6E6"-->
+                <!--android:angle="180"-->
+
+                <!--&gt;-->
+            <!--</gradient>-->
+            <!--<stroke android:color="#ff272727" android:width="1dp" />-->
+            <!--<gradient android:angle="90"-->
+            <!--android:startColor="#ffa7a7a7"-->
+            <!--android:centerColor="#ff6a6a6a"-->
+            <!--android:endColor="#ffa7a7a7"-->
+            <!--android:type="linear"/>-->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle"> <!-- this is for dialog frame -->
+            <corners android:radius="3dp"/>
+            <solid android:color="@color/white"></solid>
+
+        </shape>
+    </item>
+</layer-list>

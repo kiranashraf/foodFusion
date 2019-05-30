@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/owsewhite"
+    android:id="@+id/cl1"
+    tools:context="com.foodfusion.foodfusion.SubCategoriesActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="10dp"
+                        android:src="@drawable/back_arrow"
+                        android:id="@+id/img_back"
+                        android:onClick="BackButton"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        style="@style/TextViewBlackHeadingStyleMid"/>
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/like_icon_menu"-->
+                        <!--android:layout_toLeftOf="@+id/search_icon_menu"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:src="@drawable/filter_menu2"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/search_icon_menu"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:src="@drawable/search_menu2"/>-->
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Categories"
+                    style="@style/TextViewBlackHeadingStyle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewMainGrayStyle"
+                    android:textColor="#9C9EA1"
+                    android:text="All recipes"/>
+                <com.foodfusion.foodfusion.Custom.MyGridView
+                    android:layout_marginTop="20dp"
+                    android:numColumns="3"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/grid"
+                    android:verticalSpacing="4dp"
+                    android:horizontalSpacing="3dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/network"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noConnection"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>
+</LinearLayout>

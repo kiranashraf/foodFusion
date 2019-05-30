@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item-->
+    <!--android:id="@+id/action_search"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:icon="@drawable/search_menu2"-->
+    <!--app:showAsAction="always"-->
+    <!--android:title="Search..." />-->
+    <!--<item-->
+    <!--android:id="@+id/action_settings"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="settings"-->
+    <!--app:showAsAction="never" />-->
+
+    <!--<item-->
+        <!--android:orderInCategory="90"-->
+        <!--android:id="@+id/action_favourite"-->
+        <!--android:title="Favourite"-->
+        <!--android:icon="@drawable/like_icon_menu"-->
+        <!--app:showAsAction="ifRoom">-->
+    <!--</item>-->
+    <item
+        android:orderInCategory="80"
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/search_white_icon_menu"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always|collapseActionView"
+        android:theme="@style/EditTextStyleWhite">
+
+    </item>
+</menu>

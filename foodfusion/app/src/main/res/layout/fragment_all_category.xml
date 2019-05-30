@@ -1,0 +1,166 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pattern"
+    tools:context="com.foodfusion.foodfusion.Fragment.AllCategoryFragment"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/data">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Categories"
+                style="@style/TextViewBlackHeadingStyle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextViewMainGrayStyle"
+                android:textColor="#9C9EA1"
+                android:text="All recipes"/>
+                    <com.foodfusion.foodfusion.Custom.MyGridView
+                        android:layout_marginTop="20dp"
+                        android:numColumns="3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/grid"
+
+                        android:verticalSpacing="4dp"
+                        android:horizontalSpacing="3dp"
+                        android:layout_marginBottom="50dp"
+
+                        />
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/noData"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:visibility="visible">-->
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;android:src="@drawable/reload"/>&ndash;&gt;-->
+        <!--<TextView-->
+            <!--style="@style/TextViewGrayStyle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:layout_marginRight="60dp"-->
+            <!--android:background="@color/appColor"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="@string/reload"-->
+            <!--android:textColor="@color/white" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/noData"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.92"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.28"
+                android:src="@drawable/no_internet"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/heading_login"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.07"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Connection Lost"
+                style="@style/TextViewBlackHeadingStyleMid"
+                android:textStyle="bold"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2dp"
+                    style="@style/EditTextLabelStyle"
+                    android:textSize="14dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="No internet connection. Please check whether Wifi or cellular data is connected. "
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.18"
+                >
+                <TextView
+android:id="@+id/reload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/retry"
+                    style="@style/TextViewGrayStyle"
+                    android:background="@color/appColor"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Splash"
+    android:id="@+id/mainRL"
+    android:background="@drawable/splash">
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/logo_splash" />
+
+        <TextView
+            android:id="@+id/weare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weAreHere"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/cookfun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cookingFun"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_marginTop="-10dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyrights © 2018 Food Fusion"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

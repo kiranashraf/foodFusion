@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="2dp">
+
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_recipe_thumbnail"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            card_view:cardCornerRadius="6dp"
+            card_view:cardElevation="0.01dp"
+            android:background="@color/white"
+            card_view:cardPreventCornerOverlap="true"
+            android:layout_margin="2dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/top_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/img_thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ff_logo_small_icon"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_like"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/like_detail_icon"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:onClick="likeClickHandler"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+
+            android:id="@+id/tv_species"
+            android:layout_width="136dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:paddingTop="7dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:gravity="left"
+            android:text="Test"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="13dp"/>
+    </LinearLayout>
+</LinearLayout>
